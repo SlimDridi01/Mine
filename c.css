@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("Dev.jpg");
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    
+}
+.topnav { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1500px;
+    margin: auto;
+    padding: 20px;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+}
+.MP{color:white;
+letter-spacing: 1px;}
+
+.nav_links{
+    display: flex;
+    gap: 1em;
+font-size: 18px;
+}
+
+.nav_links li{
+    list-style: none;
+    text-align: center;
+}
+.nav_links li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.nav_links li :hover{background-color: white;
+    
+margin: 15px;
+padding: 15px;}
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    margin: 5px;
+    background-color: white;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+@media screen and (max-width: 1024px){
+    .nav_links{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 768px){
+
+body{ overflow-x: hidden;
+}
+    .nav_links{
+        position: absolute;
+        right:0px;
+        top: 8vh;
+        background-color: #5D4954;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(100%);
+        
+    }
+        .MP{
+            position: absolute;
+            align-items: center;
+            left:0px;
+            margin:20px
+        }
+        .burger{
+            display: block;
+        }
+    }
+
+        .nav_is_active{
+            transform: translateX(0%);
+        }
+        .home{background-color: ;
+        }
+        .home{width: 1500px;
+            margin: auto;}
+        .citation{color: white;
+            margin-top: 3%;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+.introduction{display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    
+}
+.introduction img {width: 20%;
+}
+
+
+
+
